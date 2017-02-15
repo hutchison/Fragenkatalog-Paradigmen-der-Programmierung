@@ -1,0 +1,78 @@
+\documentclass[
+  a4paper,
+  11pt,
+]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[cm, headings]{fullpage}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\renewcommand{\O}{\mathcal{O}}
+
+\usepackage{color}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\usepackage{listings}
+\usepackage{tikz}
+\usepackage{pgfplots}
+
+% Für Zeilenumbrüche ohne Indentations
+\setlength{\parindent}{0pt}
+
+\lstset{%
+  basicstyle=\ttfamily,
+  keywordstyle=\color{blue},
+  commentstyle=\color{mygray},
+  language=C,
+  showstringspaces=false,
+}
+
+% coole Kopf- und Fußzeilen:
+\usepackage{fancyhdr}
+% Seitenstil ist natürlich fancy:
+\pagestyle{fancy}
+% alle Felder löschen:
+\fancyhf{}
+
+\fancyhead[L]{%
+  Paradigmen der Programmierung
+}
+\fancyhead[R]{%
+  Fragenkatalog
+}
+%\fancyfoot[L]{}
+\fancyfoot[C]{\thepage}
+
+\title{}
+
+\author{}
+
+\begin{document}
+
+\thispagestyle{fancy}
+
+\subsection*{Unix}
+\label{sub:Unix}
+
+\begin{itemize}
+  \item Beschreiben Sie ein allgemeines Unixsystem.
+  \item Beschreiben Sie das Prinzip „alles ist eine Datei.“
+    \begin{itemize}
+      \item Warum ist das sinnvoll?
+      \item Welches Paradigma wird dadurch implementiert?
+        (Pipe-Filter-Architektur)
+    \end{itemize}
+  \item Wo liegen in Unix/Linux die Gerätetreiber? In den Programmen oder im
+    Kernel? (Kernel)
+  \item Wenn man ein neues Gerät an den Computer anschließt, müssen Sie das dann
+    in ihrer Anwendung berücksichtigen?
+  \item Wenn ein C-Programm eine Minute läuft, kann man dann sicher sein, dass
+    dann immer noch ein C-Programm läuft? Besonders im Hinblick auf den
+    \texttt{exec}-Systemcall.
+  \item Erklären Sie den Unterschied zwischen \texttt{fork()} und
+    \texttt{exec()}.
+\end{itemize}
+
+
+
+\end{document}
