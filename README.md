@@ -23,7 +23,7 @@
 
 * Was ist eine Monade?
 * Wofür braucht man Monaden?
-* Betrachten wir die IO-Monade aus der Vorlesung: welchen Typ hat diese und wie ist der Bind-Operator ($\gge$) definiert? (auf „Weltzustand“ und „RealWorld“ eingehen)
+* Betrachten wir die IO-Monade aus der Vorlesung: welchen Typ hat diese und wie ist der Bind-Operator (`>>=`) definiert? (auf „Weltzustand“ und „RealWorld“ eingehen)
 * Wie funktioniert dann die sequentelle Berechnung/Ausführung von Funktionen?
 * Was ist ein Monadentransformer?
 * Wie sieht die Typklasse von Monadentransformern aus?
