@@ -43,6 +43,8 @@
 %\fancyfoot[L]{}
 \fancyfoot[C]{\thepage}
 
+\newcommand{\gge}{>\!\!>\!\!=}
+
 \title{}
 
 \author{}
@@ -56,11 +58,12 @@
 
 \begin{itemize}
   \item Beschreiben Sie ein allgemeines Unixsystem.
+  \item Beschreiben Sie die Philosophien von Unix.
   \item Beschreiben Sie das Prinzip „alles ist eine Datei.“
     \begin{itemize}
       \item Warum ist das sinnvoll?
       \item Welches Paradigma wird dadurch implementiert?
-        (Pipe-Filter-Architektur)
+        (Pipe-Filter-Architektur bzw. Datenflussparadigma)
     \end{itemize}
   \item Wo liegen in Unix/Linux die Gerätetreiber? In den Programmen oder im
     Kernel? (Kernel)
@@ -71,14 +74,16 @@
     \texttt{exec}-Systemcall.
   \item Erklären Sie den Unterschied zwischen \texttt{fork()} und
     \texttt{exec()}.
+  \item Was passiert genau bei \textt{fork()} und \texttt{exec()}?
   \item Wenn ein Programm mittels \texttt{fork()} ein Kindprogramm erzeugt, ab
     welchem Punkt findet dann die weitere Ausführung statt? (ab dem Aufruf von
     \texttt{fork()} und nicht von vorne)
-  \item Wie baut man Pipes?
+  \item Wie baut man Pipes? Wie funktionieren Pipes?
+  \item Was passiert beim Umleiten der Ausgabe eines Programms? Wie genau wird
+    das in einer Shell gemacht?
   \item Warum sind \textit{file descriptor} wichtig?
   \item Welche Standard-FDs bekommt jeder Prozess? (\texttt{stdin},
     \texttt{stdout}, \texttt{stderr})
-  \item Wie wird die Ausgabe eines Programms umgeleitet?
 \end{itemize}
 
 \subsection*{Haskell und Monaden}
@@ -88,12 +93,13 @@
   \item Was ist eine Monade?
   \item Wofür braucht man Monaden?
   \item Betrachten wir die IO-Monade aus der Vorlesung: welchen Typ hat diese
-    und wie ist der Bind-Operator (\texttt{>>=}) definiert? (auf „Weltzustand“
+    und wie ist der Bind-Operator ($\gge$) definiert? (auf „Weltzustand“
     und „RealWorld“ eingehen)
   \item Wie funktioniert dann die sequentelle Berechnung/Ausführung von
     Funktionen?
   \item Was ist ein Monadentransformer?
-  \item Wie schafft man es einen Zustande (State) an eine andere Monade
+  \item Wie sieht die Typklasse von Monadentransformern aus?
+  \item Wie schafft man es einen Zustand (State) an eine andere Monade
     ranzubacken?
 \end{itemize}
 
