@@ -11,7 +11,7 @@
 * Wenn man ein neues Gerät an den Computer anschließt, müssen Sie das dann in ihrer Anwendung berücksichtigen?
 * Wenn ein C-Programm eine Minute läuft, kann man dann sicher sein, dass dann immer noch ein C-Programm läuft? Besonders im Hinblick auf den `exec`-Systemcall.
 * Erklären Sie den Unterschied zwischen `fork()` und `exec()`.
-* Was passiert genau bei \textt{fork()` und `exec()`?
+* Was passiert genau bei `fork()` und `exec()`?
 * Wenn ein Programm mittels `fork()` ein Kindprogramm erzeugt, ab welchem Punkt findet dann die weitere Ausführung statt? (ab dem Aufruf von `fork()` und nicht von vorne)
 * Wie baut man Pipes? Wie funktionieren Pipes?
 * Was passiert beim Umleiten der Ausgabe eines Programms? Wie genau wird
