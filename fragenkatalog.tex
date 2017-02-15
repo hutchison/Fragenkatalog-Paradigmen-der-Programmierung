@@ -71,8 +71,29 @@
     \texttt{exec}-Systemcall.
   \item Erklären Sie den Unterschied zwischen \texttt{fork()} und
     \texttt{exec()}.
+  \item Wenn ein Programm mittels \texttt{fork()} ein Kindprogramm erzeugt, ab
+    welchem Punkt findet dann die weitere Ausführung statt? (ab dem Aufruf von
+    \texttt{fork()} und nicht von vorne)
+  \item Wie baut man Pipes?
+  \item Warum sind \textit{file descriptor} wichtig?
+  \item Welche Standard-FDs bekommt jeder Prozess? (\texttt{stdin},
+    \texttt{stdout}, \texttt{stderr})
 \end{itemize}
 
+\subsection*{Haskell und Monaden}
+\label{sub:Haskell und Monaden}
 
+\begin{itemize}
+  \item Was ist eine Monade?
+  \item Wofür braucht man Monaden?
+  \item Betrachten wir die IO-Monade aus der Vorlesung: welchen Typ hat diese
+    und wie ist der Bind-Operator (\texttt{>>=}) definiert? (auf „Weltzustand“
+    und „RealWorld“ eingehen)
+  \item Wie funktioniert dann die sequentelle Berechnung/Ausführung von
+    Funktionen?
+  \item Was ist ein Monadentransformer?
+  \item Wie schafft man es einen Zustande (State) an eine andere Monade
+    ranzubacken?
+\end{itemize}
 
 \end{document}
