@@ -15,6 +15,7 @@
 * Wenn ein Programm mittels `fork()` ein Kindprogramm erzeugt, ab welchem Punkt findet dann die weitere Ausführung statt? (ab dem Aufruf von `fork()` und nicht von vorne)
 * Wie baut man Pipes? Wie funktionieren [Pipes](https://de.wikipedia.org/wiki/Pipe_(Informatik))?
 * Was passiert beim Umleiten der Ausgabe eines Programms? Wie genau wird das in einer Shell gemacht?
+* Wann werden bei einer Pipe die FD der Kommandos umgelenkt? (zwischen Fork und Exec)
 * Warum sind *file descriptors* wichtig?
 * Welche Standard-FDs bekommt jeder Prozess? (`stdin`, `stdout`, `stderr`)
 
@@ -37,3 +38,4 @@
 * Was ist eine [Closure](https://de.wikipedia.org/wiki/Closure_(Funktion))?
 * Erklären Sie den Unterschied zwischen einem C- und einem Lisp-Makro.
 * Erklären Sie den Unterschied zwischen einer Haskell- und einer Lisp-Closure.
+* Was kann man mit Lisp-Closures nicht implementieren? (Nichts, man kann alles implementieren)
