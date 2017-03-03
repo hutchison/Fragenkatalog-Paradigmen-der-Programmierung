@@ -20,7 +20,7 @@
 
 ## Haskell und Monaden
 
-* Was ist eine Monade?
+* Was ist eine Monade? ([siehe z.B. die Typeclassopedia](https://wiki.haskell.org/Typeclassopedia))
 * Wofür braucht man Monaden?
 * Betrachten wir die IO-Monade aus der Vorlesung: welchen Typ hat diese und wie ist der Bind-Operator (`>>=`) definiert? (auf „Weltzustand“ und „RealWorld“ eingehen)
 * Wie funktioniert dann die sequentelle Berechnung/Ausführung von Funktionen?
